@@ -1,0 +1,100 @@
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
+
+import '../models/chart.dart';
+
+final List<Chart> charts = [
+  Chart(
+    title: 'Temperature',
+    chartData: [
+      DataPoint(DateTime(2023, 7, 1, 10, 5), 22),
+      DataPoint(DateTime(2023, 7, 1, 10, 10), 22),
+      DataPoint(DateTime(2023, 7, 1, 10, 15), 23),
+      DataPoint(DateTime(2023, 7, 1, 10, 20), 23),
+      DataPoint(DateTime(2023, 7, 1, 10, 25), 22),
+      DataPoint(DateTime(2023, 7, 1, 10, 30), 23),
+      DataPoint(DateTime(2023, 7, 1, 10, 35), 24),
+      DataPoint(DateTime(2023, 7, 1, 10, 40), 24),
+      DataPoint(DateTime(2023, 7, 1, 10, 45), 25),
+      DataPoint(DateTime(2023, 7, 1, 10, 50), 25),
+    ],
+    areaColor: const Color.fromRGBO(75, 135, 185, 0.3),
+    borderColor: const Color.fromRGBO(75, 135, 185, 1),
+    borderWidth: 2,
+    markerSettings: const MarkerSettings(
+      isVisible: true,
+      color: Color.fromRGBO(75, 135, 185, 1),
+      borderWidth: 1,
+    ),
+  ),
+  Chart(
+    title: 'Humidity',
+    chartData: [
+      DataPoint(DateTime(2023, 7, 1, 10, 5), 60),
+      DataPoint(DateTime(2023, 7, 1, 10, 10), 62),
+      DataPoint(DateTime(2023, 7, 1, 10, 15), 64),
+      DataPoint(DateTime(2023, 7, 1, 10, 20), 66),
+      DataPoint(DateTime(2023, 7, 1, 10, 25), 68),
+      DataPoint(DateTime(2023, 7, 1, 10, 30), 70),
+      DataPoint(DateTime(2023, 7, 1, 10, 35), 72),
+      DataPoint(DateTime(2023, 7, 1, 10, 40), 74),
+      DataPoint(DateTime(2023, 7, 1, 10, 45), 76),
+      DataPoint(DateTime(2023, 7, 1, 10, 50), 78),
+    ],
+    areaColor: const Color.fromRGBO(234, 123, 63, 0.3),
+    borderColor: const Color.fromRGBO(234, 123, 63, 1),
+    borderWidth: 2,
+    markerSettings: const MarkerSettings(
+      isVisible: true,
+      color: Color.fromRGBO(234, 123, 63, 1),
+      borderWidth: 1,
+    ),
+  ),
+  Chart(
+    title: 'pH',
+    chartData: [
+      DataPoint(DateTime(2023, 7, 1, 10, 5), 6.4),
+      DataPoint(DateTime(2023, 7, 1, 10, 10), 6.4),
+      DataPoint(DateTime(2023, 7, 1, 10, 15), 6.3),
+      DataPoint(DateTime(2023, 7, 1, 10, 20), 6.2),
+      DataPoint(DateTime(2023, 7, 1, 10, 25), 6.3),
+      DataPoint(DateTime(2023, 7, 1, 10, 25), 6.2),
+      DataPoint(DateTime(2023, 7, 1, 10, 30), 6.3),
+      DataPoint(DateTime(2023, 7, 1, 10, 35), 6.2),
+      DataPoint(DateTime(2023, 7, 1, 10, 40), 6.3),
+      DataPoint(DateTime(2023, 7, 1, 10, 45), 6.4),
+      DataPoint(DateTime(2023, 7, 1, 10, 50), 6.4),
+    ],
+    areaColor: const Color.fromRGBO(170, 71, 186, 0.3),
+    borderColor: const Color.fromRGBO(170, 71, 186, 1),
+    borderWidth: 2,
+    markerSettings: const MarkerSettings(
+      isVisible: true,
+      color: Color.fromRGBO(170, 71, 186, 1),
+      borderWidth: 1,
+    ),
+  ),
+  Chart(
+    title: 'Conductivity (EC)',
+    chartData: [
+      DataPoint(DateTime(2023, 7, 1, 10, 5), 800),
+      DataPoint(DateTime(2023, 7, 1, 10, 10), 780),
+      DataPoint(DateTime(2023, 7, 1, 10, 15), 760),
+      DataPoint(DateTime(2023, 7, 1, 10, 20), 740),
+      DataPoint(DateTime(2023, 7, 1, 10, 25), 720),
+      DataPoint(DateTime(2023, 7, 1, 10, 30), 700),
+      DataPoint(DateTime(2023, 7, 1, 10, 35), 680),
+      DataPoint(DateTime(2023, 7, 1, 10, 40), 660),
+      DataPoint(DateTime(2023, 7, 1, 10, 45), 640),
+      DataPoint(DateTime(2023, 7, 1, 10, 50), 620),
+    ],
+    areaColor: const Color.fromRGBO(50, 205, 154, 0.3),
+    borderColor: const Color.fromRGBO(50, 205, 154, 1),
+    borderWidth: 2,
+    markerSettings: const MarkerSettings(
+      isVisible: true,
+      color: Color.fromRGBO(50, 205, 154, 1),
+      borderWidth: 1,
+    ),
+  ),
+];
